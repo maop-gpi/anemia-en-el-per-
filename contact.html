@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>FOX</title>
+    
+    
+    <meta name="keywords" content="Designer, Freelancer, Portfolio, Web Design" />
+    <meta name="description" content="Portfolio website" />
+    <meta name="author" content="Pulsecolor" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400italic,700italic' rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+   <script type="text/javascript" src="js/jquery.gmap.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-26499579-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <script type="text/javascript">
+		$(document).ready(function(){
+		$("#map").gMap({ controls: false,
+		                  scrollwheel: false,
+                          draggable: false,
+		                  markers: [{ latitude:  44.8205556,
+		                              longitude: 20.4622222,
+		                              icon: { image: "images/pin.png",
+		                                      iconsize: [48, 48],
+		                                      iconanchor: [48,48],
+		                                      infowindowanchor: [12, 0] } }
+		                            ],
+		                  icon: { image: "images/pin.png", 
+		                          iconsize: [26, 46],
+		                          iconanchor: [12, 46],
+		                          infowindowanchor: [12, 0] },
+		                  latitude: 44.8205556,
+		                  longitude: 20.4622222,
+		                  zoom: 13 });
+	});
+
+	</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+  <!-- BEGIN .header -->
+  <header>
+  <hr id="hr-dark" />
+    <div id="menu-hidden">
+      <div class="grid-960">
+        <div class="grid-1-1">
+          <h1 id="logo-hidden"><a href="index.html" title="FOX"><img src="images/logo-hidden.png" title="FOX" alt="FOX" width="160" height="20" /></a></h1>
+          <ul id="top-menu">
+             <li><a href="index.html">Portfolio</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="services.html">Services</a></li>
+             <li><a class="active" href="contact.html">Contact</a></li>
+         </ul>
+        </div><!--grid-1-1-->
+       </div><!--grid-960-->
+     </div><!--menu-hidden-->
+     
+     <div class="grid-960">
+       <div class="grid-1-1">
+        <h1 id="logo"><a href="index.html" title="FOX"><img src="images/logo.png" title="FOX" alt="FOX" width="420" height="50" /></a></h1>
+        <nav>
+          <ul>
+             <li><a href="index.html">Portfolio</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="services.html">Services</a></li>
+             <li><a class="active" href="contact.html">Contact</a></li>
+         </ul>
+       </nav>
+       <div class="spacer-40"></div>
+      </div><!--grid-1-1-->
+     </div><!--grid-960-->
+    <hr id="hr-full" />
+  </header>
+  
+  <article>
+    <div class="grid-960">
+     <div class="grid-1-1">
+            <div class="spacer-45"></div>
+
+            <hgroup>
+                <h1 class="text-center">Contact</h1>
+                <h4 class="main-subtitle text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+            </hgroup>
+            <br /><div class="divider-border"></div>
+            <div class="spacer-40"></div>
+        </div><!--grid-1-1-->
+         <div class="grid-1-1">
+         <div id="map"></div> <!-- /map -->
+                <div class="spacer-25"></div>
+
+        </div>
+        
+        <div class="grid-1-2">
+          <div class="contact-form">
+            <form action="send.php" id="contact_form" method="post" /><br /><br />
+				<ul>
+				  <li>
+				    <p class="text">Name <span class="required">required</span></p>
+				    <input type="text" name="name" id="name" value="" class="requiredField" />
+			      </li>
+				  <li>
+                 <p class="text">Email <span class="required">required</span></p>
+                 <input type="text" name="email" id="email" value="" class="requiredField email" />
+                 </li>
+                 <li>
+                 <p class="text">Phone</p>
+                 <input type="text" name="phone" id="phone" value="" class="requiredField phone" />
+                 </li>
+                 <li class="textarea">
+                 <p class="text">Message <span class="required">required</span></p>
+                 <textarea name="message" id="message" rows="20" cols="30" class="requiredField"></textarea>
+                 </li>
+                 <li><input name="submitted" id="submitted" value="Submit" class="submit" type="submit" /></li>
+              </ul><!--END ul-->
+			</form><!--END form ID contact_form-->
+            <div class="spacer-25"></div>
+            <div class="spacer-55"></div>
+           </div><!-- END: Contact Form -->
+                </div><!--form-container-->
+
+        </div><!--grid-1-2-->
+       
+        <div class="grid-1-2">
+            <h3>How to find us?</h3>
+            <div class="spacer-25"></div>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+
+        </div><!--grid-1-2-->
+        <div class="grid-1-2">
+            <h3>Contact Information</h3>
+            <div class="spacer-25"></div>
+            <div class="contact-information">
+                   <ul>
+                      <li class="address_1"><strong>Address:</strong> Street 9890, New Something 1234, Country</li>
+                      <li class="phone_1"><strong>Phone:</strong> + 1 800 559 6580</li>
+                      <li class="email_1"><strong>Email:</strong> <a href="mailto:info@fox.com">info@fox.com</a></li>
+                   </ul><!--END ul-->
+              </div><!--END contact-information-->
+        </div><!--grid-1-2-->
+        <!--grid-960-->
+    </article>
+ 
+ <footer>
+ <div class="grid-960">
+   <div class="grid-1-1">
+    <h1 id="logo-footer"><a href="#" title="FOX"><img src="images/logo_footer.png" title="FOX" alt="FOX" width="160" height="80" /></a></h1><br />
+   <!--grid-1-1-->
+   <div class="grid-1-1">
+     <div class="socialmedia right">
+       <ul class="social">
+         <li><a href="#" class="twitter"></a></li>
+         <li><a href="#" class="facebook"></a></li>
+         <li><a href="#" class="gplus"></a></li>
+         <li><a href="#" class="dribbble"></a></li>
+         <li><a href="#" class="fivehundredpx"></a></li>
+         <li><a href="#" class="flickr"></a></li>
+         <li><a href="#" class="vimeo"></a></li>
+         <li><a href="#" class="youtube"></a></li>
+         <li><a href="#" class="pinterest"></a></li>
+         <li><a href="#" class="deviantart"></a></li>
+         <li><a href="#" class="foursquare"></a></li>
+         <li><a href="#" class="wordpress"></a></li>
+         <li><a href="#" class="feed"></a></li>
+       </ul>
+     </div>
+   </div><!--grid-1-1-->
+   <br /><br />
+   <div id="copyright">Copyright &copy; 2013 by Pulsecolor. All Rights Reserved.</div>
+     <div id="scroll-container">
+       <a class="scroll-top" href="" title="Scroll To Top"><span id="scroll-arrow"></span></a>
+     </div>
+    </div><!--grid-1-1-->
+   </div><!--grid-960-->
+  <div class="dark"></div>
+ </footer>
+</body>
+</html>
